@@ -1,9 +1,11 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
+import { NavLink } from "react-router-dom";
 import NavbarStyle from './Navbar.module.css'
 import { AiOutlineMenu,AiOutlineClose } from "react-icons/ai";
 import {useState} from 'react'
 import { Data , Data2 , Data3} from '../Data';
+import { animateScroll as scroll } from "react-scroll";
 import {useRecoilState} from 'recoil' 
 export default function Navbar(){
   const[show , setShow] = useState(true)

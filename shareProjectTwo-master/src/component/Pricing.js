@@ -1,10 +1,8 @@
 import React from "react";
-// import "./style.css";
 import PricingStyle from './Pricing.module.css'
 import {useRecoilState} from 'recoil'
 import {Data ,Data2 ,Data3} from '../Data'
 import {Link } from 'react-router-dom'
-// import Activity from './Activity'
 import { useNavigate } from "react-router-dom";
 
 export default function Pricing() {

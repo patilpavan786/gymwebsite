@@ -1,42 +1,70 @@
-import React from 'react'
-import { BsFacebook,BsInstagram } from "react-icons/bs";
+import React from "react";
+import style from "./Footer.module.css";
+import { NavLink } from "react-router-dom";
+import { animateScroll as scroll } from "react-scroll";
+import { BsFacebook } from "react-icons/bs";
+import { BsInstagram } from "react-icons/bs";
 import { AiFillTwitterCircle } from "react-icons/ai";
-import FooterStyle from './Footer.module.css'
+import { AiFillYoutube } from "react-icons/ai";
+import foot from "./Footer.module.css";
 
-export default function Footer(){
-  return(
-    <>
-    <div className={FooterStyle.border}>
-    <div className={FooterStyle.main}>
-      <div >
-      <h1>GYM</h1>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta, fugiat?</p>
-      <a className={FooterStyle.links} style={{fontSize:"2em" ,color : "white"}} href='https://www.facebook.com/' target="_blank"><BsFacebook/></a>
-      <a className={FooterStyle.links}  style={{fontSize:"2em" ,color : "white"}} href='https://www.instagram.com/' target="_blank"><BsInstagram/></a>
-      <a  className={FooterStyle.links} style={{fontSize:"2em" ,color : "white"}} href='https://twitter.com/?lang=en' target="_blank"><AiFillTwitterCircle/></a>
-      </div>
-      <div className={FooterStyle.griding}>
-       <span>Lorem ipsum dolor</span>
-       <span>Lorem ipsum dolor</span>
-       <span>Lorem ipsum dolor</span>
-       <span>Lorem ipsum dolor</span>
-       <span>Lorem ipsum dolor</span>
-       <span>Lorem ipsum dolor</span>
-       <span>Lorem ipsum dolor</span>
-       <span>Lorem ipsum dolor</span>
-       <span>Lorem ipsum dolor</span>
-       <span>Lorem ipsum dolor</span>
-       <span>Lorem ipsum dolor</span>
-       <span>Lorem ipsum dolor</span>
-       <span>Lorem ipsum dolor</span>
-       <span>Lorem ipsum dolor</span>
-       <span>Lorem ipsum dolor</span>
-      </div>
-      </div>
-      <div className={FooterStyle.copy} style={{display: "flex" , justifyContent : "center"  ,backgroundColor :"black" , color : "white"}}>
-      <h3 >&copy;2023 All Rights  Reserved To Team 12</h3>
-      </div>
-      </div>
-    </>
-  )
+function Footer() {
+  return (
+    <div className={style.main}>
+  
+        <div className={style.row}>
+          {/* coloum1 */}
+          <div className="col">
+            <NavLink
+              className={foot.navbarbrand}
+              style={{ fontSize: 40 }}
+              to="/"
+              onClick={() => scroll.scrollToTop()}
+            >
+              <i class="fa fa-duotone fa-dumbbell"></i>
+              <i class="fa fa-duotone fa-dumbbell"></i>
+            </NavLink>
+          </div>
+          <div className="col">
+            <a style={{ color: "red" }} href="https://www.facebook.com/">
+              <BsFacebook />
+            </a>
+            &nbsp;&nbsp;
+            <a style={{ color: "red" }} href="https://www.instagram.com/">
+              <BsInstagram />
+            </a>
+            &nbsp;&nbsp;
+            <a style={{ color: "red" }} href="https://www.twitter.com/">
+              <AiFillTwitterCircle />
+            </a>
+            &nbsp;&nbsp;
+            <a style={{ color: "red" }} href="https://www.youtube.com/">
+              <AiFillYoutube />
+            </a>
+          </div>
+          <div className="col">
+            <h4>Healthy Living</h4>
+            <ul className="'list">
+              <li>Loreum</li>
+              <li>Loreum ipsum</li>
+              <li>Loreum ipsum ipsum</li>
+            </ul>
+          </div>
+          <div className="col">
+            <h4>Servive</h4>
+            <ul className="'list">
+              <li>Loreum</li>
+              <li>Loreum ipsum</li>
+              <li>Loreum ipsum ipsum</li>
+            </ul>
+          </div>
+        </div>
+        <div className="row">
+          <div className={style.col}>Copy Right @ By Pavan Patil</div>
+        </div>
+     
+    </div>
+  );
 }
+
+export default Footer;

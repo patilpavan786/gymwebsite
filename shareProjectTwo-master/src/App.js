@@ -31,7 +31,7 @@ export default function App() {
       <Navbar className={AppStyle.nav}/>
       <div className={AppStyle.wrap}>
      <div className={AppStyle.content}>
-       <h1>“<span className={AppStyle.quotes}>Ability </span> is what you’re capable of doing. <span className={AppStyle.quotes}>Motivation </span> determines what you do.<span className={AppStyle.quotes}>Atitude </span> determines how well you do it.”</h1>
+       <h1>“Ability  is what you’re capable of doing. Motivation determines what you do.Atitude  determines how well you do it.”</h1>
     
      </div>
 
@@ -58,8 +58,7 @@ export default function App() {
 
      </div>
     </div>
-    
-    <div id='program'>
+ <div id='program'>
     <Training />
     </div>
 

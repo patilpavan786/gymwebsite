@@ -24,9 +24,9 @@
   display: none;
   position: fixed;
   right: 0em;
-  color: white;
+  color: rgb(134, 153, 153);
   font-size: 2em;
-  text-shadow: 3px 3px rgb(172, 0, 0);
+  text-shadow: 3px 3px rgb(179, 83, 83);
  
 
 }
@@ -57,10 +57,8 @@
   position: fixed;
   left: 2.5em;
   color: rgb(155, 95, 95);
-  /* background-color: rgb(0, 110, 255);  */
   width: 3.6em;
   height: 1.9em;
-  font-family: Algerian;
   font-size: 2em;
  
 }
@@ -85,9 +83,9 @@
   }
   .mobile{
     display: unset;
-    font-size: 5em;
-    box-shadow: 4px 4px rgb(0, 110, 255); 
-    border:2px solid rgb(0, 110, 255); 
+    font-size: 3em;
+    box-shadow: 4px 4px rgb(9, 15, 22); 
+    border:2px solid rgb(0, 0, 0); 
   }
   .joibus{
     display: none;
@@ -105,6 +103,6 @@
     height: 15vh;
   }
   .logo{
-    font-size: 5em;
+    font-size: 3em;
   }
 }
