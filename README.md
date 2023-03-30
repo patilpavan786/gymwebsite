@@ -1,3 +1,2 @@
-#About Social Networking website just like twitter Multiple user Data is handle with Browser Api Local storage User can register User can login After login they can see other user profile They can post text images etc They can like comment on the post. Mobile Responsive
-
-##Tech Used HTML CSS JavaScript ReactJS RecoilJS Local Storage React Icons Material UI
+About
+This is website based on Fitness and GYM User can register themselves User can login User can take subscription of some exclusive packages After subscribing they can acces there subsription packages activites to get the details. Logout option
